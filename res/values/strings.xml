@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TaskReminderApp</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="view_reminder">View Reminder</string>
+    <string name="start_recording">Start Recording</string>
+    <string name="settings">Settings</string>
+    <string name="stop">Stop</string>
+    <string name="title_activity_record">Record Task</string>
+    <string name="title_activity_reminder_list">Reminder time</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_reminder_saving">ReminderSavingActivity</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="save">Save</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="yearly">Yearly</string>
+    <string name="vibrate_in_alarm">Vibrate in Alarm</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="alarm_settings">Alarm Settings</string>
+    <string name="vibrate_in_alarm_string">Vibration</string>
+    <string name="ringtone_name">Ringtone</string>
+    <string name="ringtone">Ringtone</string>
+    <string name="sd_card_tone">Use Custom Tone</string>
+    <string name="custom_tone">Use custom Ringtone</string>
+    <string name="snooze_duration">5</string>
+    <string name="set_snooze_duration">Set Snooze Duration</string>
+    <string name="default_snooze_duration">5</string>
+    <string name="listen_reminder">Listen Audio Reminder</string>
+    <string name="snooze_alarm">Snooze</string>
+    <string name="title_hint">Enter Title Here</string>
+    <string name="desc_hint">Enter Description Here</string>
+    <string name="done">Done</string>
+    <string name="choose_ringtone_from_sd_card">Open Galery</string>
+    <string name="title_activity_file_chooser">FileChooserActivity</string>
+    <string name="listen_audio">Listen Reminder</string>
+    <string name="once">Once</string>
+    <string name="once_rb">once</string>
+
+</resources>

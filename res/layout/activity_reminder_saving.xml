@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReminderSavingActivity" >
+	<ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <RelativeLayout 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+    <EditText
+        android:id="@+id/edtTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="8dp"
+        android:hint="@string/title_hint"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/edtTaskDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtTaskTitle"
+        android:layout_alignRight="@+id/edtTaskTitle"
+        android:layout_below="@+id/edtTaskTitle"
+        android:layout_marginTop="8dp"
+        android:gravity="top|left"
+        android:height="80dp"
+        android:hint="@string/desc_hint"
+        android:inputType="text" />
+
+    <RadioGroup
+        android:id="@+id/rgb_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_time"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/once"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="once" />
+
+        <RadioButton
+            android:id="@+id/daily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daily" />
+
+        <RadioButton
+            android:id="@+id/weekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="weekly" />
+
+        <RadioButton
+            android:id="@+id/monthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monthly" />
+
+	</RadioGroup>
+
+    <Button
+        android:id="@+id/btn_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtTaskDesc"
+        android:layout_alignRight="@+id/edtTaskDesc"
+        android:layout_below="@+id/edtTaskDesc"
+        android:onClick="showDatePickerDialog"
+        android:text="@string/date" />
+
+    <Button
+        android:id="@+id/btn_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_date"
+        android:layout_alignRight="@+id/btn_date"
+        android:layout_below="@+id/btn_date"
+        android:onClick="showTimePickerDialog"
+        android:text="@string/time" />
+
+
+    <RadioButton
+        android:id="@+id/yearly1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/rgb_reminder"
+        android:text="@string/yearly" />
+
+    <Button
+        android:id="@+id/browse_ringtone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_time"
+        android:layout_alignRight="@+id/btn_time"
+        android:layout_below="@+id/yearly1"
+        android:layout_marginTop="22dp"
+        android:onClick="browseRingtone"
+        android:text="Browse Ringtone" />
+
+    <Button
+        android:id="@+id/listen_reminder_again"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/browse_ringtone"
+        android:layout_alignRight="@+id/browse_ringtone"
+        android:layout_below="@+id/browse_ringtone"
+        android:onClick="listenReminderAgain"
+        android:text="Listen Reminder" />
+    
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listen_reminder_again"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/listen_reminder_again"
+        android:layout_below="@+id/listen_reminder_again" >
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onCancelClick"
+            android:text="@android:string/cancel" />
+
+        <Button
+            android:id="@+id/btn_confirm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="onSaveClick"
+            android:text="@string/save" />
+    </LinearLayout>
+    </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

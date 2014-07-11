@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+ <PreferenceCategory android:key="pf" android:title="@string/alarm_settings" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="vibrate_in_alarm"
+            android:summary="@string/vibrate_in_alarm"
+            android:title="@string/vibrate_in_alarm_string" >
+        </CheckBoxPreference>
+        <ListPreference
+        	android:key="ringtone"
+            android:entries="@array/get_ring_tones"
+            android:summary="@string/ringtone_name"
+            android:entryValues="@array/ring_tone_values"
+            android:title="@string/ringtone" />
+        
+         <EditTextPreference
+             android:defaultValue="@string/default_snooze_duration"
+             android:key="snooze_value"
+             android:summary="@string/snooze_duration"
+             android:title="@string/set_snooze_duration"
+             android:dialogTitle="Enter the snooze duration in mins:"
+             android:inputType="number" 
+             />
+         
+ 
+        
+    </PreferenceCategory>
+ 
+</PreferenceScreen>

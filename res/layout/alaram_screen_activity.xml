@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/reminder_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/reminder_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/listen_reminder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/listen_reminder"
+        android:onClick="listenReminder" />
+
+    <Button
+        android:id="@+id/snooze"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/snooze_alarm" 
+        android:onClick="snoozeAlarm"/>
+
+    <Button
+        android:id="@+id/change_alarm_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/done"
+        android:onClick="changeAlarmStatus" />
+
+</LinearLayout>
